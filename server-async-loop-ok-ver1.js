@@ -2,7 +2,7 @@ const chalk = require("chalk");
 const { getPromise } = require("./utils");
 console.log("app is loading....");
 
-async function engine(ids) {
+function engine(ids) {
   const promiseArray = [];
   ids.forEach(id => {
     promiseArray.push(getPromise(id));

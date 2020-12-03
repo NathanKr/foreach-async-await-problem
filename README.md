@@ -6,6 +6,6 @@ i have a loop on axios.get and i want to console Done after i get all the respon
 This is not working -> check server-async-for-sample-problem.js and server-async-foreach-sample-problem.js
 
 <h2>Solution</h2>
-use Promise.all -> check server-async-loop-ok.js
+use Promise.all -> check these versions server-async-loop-ok-ver1.js and server-async-loop-ok-ver2
 
 
