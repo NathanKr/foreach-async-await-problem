@@ -1,13 +1,12 @@
 const axios = require('axios')
 
-async function engine(id) {
+function getPromise(id) {
     try {
       const res = axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`);
-      const { data } = await res;
-      console.log(`data : ${JSON.stringify(data)}`);
+      return res;
     } catch (err) {
       console.error(err);
     }
   }
 
-  module.exports = {engine}
+  module.exports = {getPromise}

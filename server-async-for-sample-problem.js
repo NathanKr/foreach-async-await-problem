@@ -1,11 +1,12 @@
 const chalk = require("chalk");
-const { engine } = require("./utils");
+const { getPromise } = require("./utils");
 console.log("app is loading....");
 
 async function run(ids) {
   for (let index = 0; index < ids.length; index++) {
     const id = ids[index];
-    await engine(id);
+    const {data} = await getPromise(id);
+    console.log(data);
   }
 }
 
