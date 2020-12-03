@@ -1,8 +1,6 @@
-const axios = require("axios");
-console.log("app is loading....");
+const axios = require('axios')
 
-async function run(ids) {
-  ids.forEach(async (id) => {
+async function engine(id) {
     try {
       const res = axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`);
       const { data } = await res;
@@ -10,7 +8,6 @@ async function run(ids) {
     } catch (err) {
       console.error(err);
     }
-  });
-}
+  }
 
-run([ 2,4,7]);
+  module.exports = {engine}
