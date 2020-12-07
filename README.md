@@ -7,8 +7,10 @@ This is not working -> check server-async-for-sample-problem.js and server-async
 
 <h2>Solution</h2>
 <ul>
-<li>use Promise.all -> check these versions server-async-loop-ok-ver1.js and server-async-loop-ok-ver2</li>
-<li>surprisingly server-async-loop-ok-ver3 is working ok without Promise.all. This i need to figure out but may be its because of closure </li>
+<li>use Promise.all for loop with foreach -> check these versions server-async-loop-ok-ver1.js and server-async-loop-ok-ver2</li>
+<li>use await for loop with loop </li>
 </ul>
 
+<h2>Conclusion</h2>
+Doing loop with await is confusing but the solution used in for loop seem reasonable.
 
