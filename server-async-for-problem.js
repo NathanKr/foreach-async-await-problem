@@ -10,5 +10,9 @@ async function run(ids) {
   }
 }
 
+/*
+ await here will make Done appear last --> 
+ check server-async-for-ok.js
+ */
 run([2, 4, 7]);
 console.log(chalk.red("Done is expected to be last !!!"));
