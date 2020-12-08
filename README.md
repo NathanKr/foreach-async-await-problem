@@ -12,5 +12,7 @@ This is not working -> check server-async-for-problem.js and server-async-foreac
 </ul>
 
 <h2>Conclusion</h2>
-Doing loop with await is confusing but the solution used in for loop seem reasonable.
-
+<ul>
+<li>Doing loop with await is confusing but the solution used in for loop seem reasonable.</li>
+<li>I advice not to use callback based loop e.g forEach with await</li>
+</ul>
